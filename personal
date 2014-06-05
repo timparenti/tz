@@ -1,0 +1,127 @@
+# Personal time zone
+# Reflects (partially) the travels of Timothy J Parenti
+
+
+
+# Main zone rules will take on US and NYC rules necessary for America/New_York,
+# the zone in which I was born.
+#
+# US and NYC rules taken from tz2014d
+# https://github.com/eggert/tz/blob/2014d/northamerica
+#
+# Give rules distinct names from the main files to avoid 'same rule name in
+# multiple files' warnings from zic.  Accomplish this by prefixing rule names
+# with an underscore.
+#
+# Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
+Rule	_US	1918	1919	-	Mar	lastSun	2:00	1:00	D
+Rule	_US	1918	1919	-	Oct	lastSun	2:00	0	S
+Rule	_US	1942	only	-	Feb	9	2:00	1:00	W # War
+Rule	_US	1945	only	-	Aug	14	23:00u	1:00	P # Peace
+Rule	_US	1945	only	-	Sep	30	2:00	0	S
+Rule	_US	1967	2006	-	Oct	lastSun	2:00	0	S
+Rule	_US	1967	1973	-	Apr	lastSun	2:00	1:00	D
+Rule	_US	1974	only	-	Jan	6	2:00	1:00	D
+Rule	_US	1975	only	-	Feb	23	2:00	1:00	D
+Rule	_US	1976	1986	-	Apr	lastSun	2:00	1:00	D
+Rule	_US	1987	2006	-	Apr	Sun>=1	2:00	1:00	D
+Rule	_US	2007	max	-	Mar	Sun>=8	2:00	1:00	D
+Rule	_US	2007	max	-	Nov	Sun>=1	2:00	0	S
+Rule	_NYC	1920	only	-	Mar	lastSun	2:00	1:00	D
+Rule	_NYC	1920	only	-	Oct	lastSun	2:00	0	S
+Rule	_NYC	1921	1966	-	Apr	lastSun	2:00	1:00	D
+Rule	_NYC	1921	1954	-	Sep	lastSun	2:00	0	S
+Rule	_NYC	1955	1966	-	Oct	lastSun	2:00	0	S
+
+
+
+# For time before my birth, start with history of America/New_York, except use
+# LMT figure from my first place of residence, based on longtiude obtained from
+# Google Maps.
+#
+# Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
+Zone Personal/Tim_Parenti	-5:21:15 -	LMT	1883 Nov 18 11:38:45
+#Zone Personal/Tim_Parenti	-5:20:19 -	LMT	1883 Nov 18 11:39:41 # Hospital
+#
+# Then use remaining rules from America/New_York to fill out the rest of time
+# before my birth.
+			-5:00	_US	E%sT	1920
+			-5:00	_NYC	E%sT	1942
+			-5:00	_US	E%sT	1946
+			-5:00	_NYC	E%sT	1967
+# From here, document any travel amongst zones.  Travel within a common zone
+# and rule set need not be documented.
+#
+# -------------------------------------------------------------------------
+# Remember: UNTIL values are given in terms of the zone being left, NOT the
+# zone being entered.  However, by convention, transitions caused by air travel
+# take effect upon landing in the new zone, so take care not to confuse the
+# times.  UNTIL times can be summarized as representing the time, in terms of
+# the zone left, at which the new zone was formally entered.
+# -------------------------------------------------------------------------
+# 
+# Travelled through the midwestern US 2004-06-18/2004-07-02.  Specific details
+# on the timing of transitions are in a notebook which I can't find.
+# TODO: Locate this data.
+# For now: Reconstruct approximations of these transitions using what
+# references and memories I do have, as of 2014-06-04.
+#
+			-5:00	_US	E%sT	2004 Jun 18 15:30
+			-5:00	-	EST	2004 Jun 18 19:00
+			-6:00	_US	C%sT	2004 Jun 21 18:30
+			-7:00	_US	M%sT	2004 Jun 28 14:50
+# My mother was driving east through South Dakota upon crossing from MDT into
+# CDT.  It so happened that she began passing a semi-trailer truck at 14:49 MDT
+# only to finish at 15:50 CDT.  We had a quick chuckle at this.
+			-6:00	_US	C%sT	2004 Jul  2 12:30
+# While in northern Indiana on the return leg, there were two short jaunts into
+# Michigan (one to look for food, and another as a photo-op to add a state to
+# the total count for the trip).  Technically, since Michigan was using EDT,
+# this would invoke four transitions, but these are all too small to worry
+# about.  Lunch ended up being at the Simonton Lake Drive-In in Elkhart,
+# Indiana at approximately 13:15 EST (14:15 EDT).  It was good.
+			-5:00	-	EST	2004 Jul  2 15:00
+#
+#
+# TRAVEL to Denver, Colorado with Pitt Band for NCAA Men's Basketball 
+# Tournament 2008.
+# America/Denver	2008-03-18T17:49-0600/2008-03-23T05:17-0400
+			-5:00	_US	E%sT	2008 Mar 18 19:49
+			-7:00	_US	M%sT	2008 Mar 23  3:17
+#
+#
+# TRAVEL to Chicago, Illinois with Pitt Band during trip to South Bend, Indiana
+# for football game against Notre Dame.
+# America/Chicago	2008-10-31T09:20-0500/2008-11-01T10:16-0400
+			-5:00	_US	E%sT	2008 Oct 31 10:20
+			-6:00	_US	C%sT	2008 Nov  1  9:16
+# Though there was travel through Indiana, this was after it began observing
+# US rules statewide on 2006-04-02.
+#
+# It is also interesting to note that DST ended less than 24 hours after
+# returning to the Eastern Time Zone, so it was just as well to get acclimated
+# to the new time in Chicago.
+#
+#
+# TRAVEL to El Paso, Texas with Pitt Band for the 2008 Sun Bowl football game.
+# America/Denver	2008-12-29T11:10-0700/2008-12-31T23:23-0500
+			-5:00	_US	E%sT	2008 Dec 29 13:10
+			-7:00	_US	M%sT	2008 Dec 31 21:23
+#
+#
+# TRAVEL to China and Hong Kong with Heinz Chapel Choir for 2009 International
+# Tour.
+# Asia/Hong_Kong	2009-04-29T14:05+0800/2009-04-29T18:30+0800
+			-5:00	_US	E%sT	2009 Apr 29  2:05
+			8:00	-	HKT	2009 Apr 29 18:30
+# Asia/Shanghai	2009-04-29T18:30+0800/2009-05-08T11:40+0800
+			8:00	-	CST	2009 May  8 11:40
+# Asia/Hong_Kong	2009-05-08T11:40+0800/2009-05-12T13:10-0400
+			8:00	-	HKT	2009 May 13  1:10
+# Although PRC and HK rules exist, they have not used DST since 1991 and 1979,
+# respectively, so ignore them.
+#
+#
+# RETURN home.
+			-5:00	_US	E%sT
+
