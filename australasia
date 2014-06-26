@@ -232,7 +232,7 @@ Zone Australia/Lord_Howe 10:36:20 -	LMT	1895 Feb
 #
 # From Arthur David Olson (2013-05-23):
 # The 1919 transition is overspecified below so pre-2013 zics
-# will produce a binary file with an EST-type as the first 32-bit type;
+# will produce a binary file with an AEST-type as the first 32-bit type;
 # this is required for correct handling of times before 1916 by
 # pre-2013 versions of localtime.
 Zone Antarctica/Macquarie 0	-	zzz	1899 Nov
@@ -843,13 +843,13 @@ Zone	Pacific/Wallis	12:15:20 -	LMT	1901
 # Corrections are welcome!
 #		std dst
 #		LMT	Local Mean Time
-#	  8:00	WST WST	Western Australia
-#	  8:45	CWST CWST Central Western Australia*
+#	  8:00	AWST AWDT	Western Australia
+#	  8:45	ACWST ACWDT Central Western Australia*
 #	  9:00	JST	Japan
-#	  9:30	CST CST	Central Australia
-#	 10:00	EST EST	Eastern Australia
+#	  9:30	ACST ACDT	Central Australia
+#	 10:00	AEST AEDT	Eastern Australia
 #	 10:00	ChST	Chamorro
-#	 10:30	LHST LHST Lord Howe*
+#	 10:30	LHST LHDT Lord Howe*
 #	 11:30	NZMT NZST New Zealand through 1945
 #	 12:00	NZST NZDT New Zealand 1946-present
 #	 12:45	CHAST CHADT Chatham*
