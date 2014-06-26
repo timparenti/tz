@@ -105,6 +105,8 @@ Zone Australia/Adelaide	9:14:20 -	LMT	1895 Feb
 # says King Island didn't observe DST from WWII until late 1971.
 #
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
+Rule	AT	1916	only	-	Oct	 1	2:00	1:00	D
+Rule	AT	1917	only	-	Mar	25	2:00	0	S
 Rule	AT	1967	only	-	Oct	Sun>=1	2:00s	1:00	D
 Rule	AT	1968	only	-	Mar	lastSun	2:00s	0	S
 Rule	AT	1968	1985	-	Oct	lastSun	2:00s	1:00	D
@@ -126,13 +128,11 @@ Rule	AT	2007	only	-	Mar	lastSun	2:00s	0	S
 Rule	AT	2008	max	-	Apr	Sun>=1	2:00s	0	S
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone Australia/Hobart	9:49:16	-	LMT	1895 Sep
-			10:00	-	AEST	1916 Oct 1 2:00
-			10:00	1:00	AEDT	1917 Feb
+			10:00	AT	AE%sT	1917 Apr
 			10:00	Aus	AE%sT	1967
 			10:00	AT	AE%sT
 Zone Australia/Currie	9:35:28	-	LMT	1895 Sep
-			10:00	-	AEST	1916 Oct 1 2:00
-			10:00	1:00	AEDT	1917 Feb
+			10:00	AT	AE%sT	1917 Apr
 			10:00	Aus	AE%sT	1971 Jul
 			10:00	AT	AE%sT
 
@@ -236,8 +236,7 @@ Zone Australia/Lord_Howe 10:36:20 -	LMT	1895 Feb
 # this is required for correct handling of times before 1916 by
 # pre-2013 versions of localtime.
 Zone Antarctica/Macquarie 0	-	zzz	1899 Nov
-			10:00	-	AEST	1916 Oct 1 2:00
-			10:00	1:00	AEDT	1917 Feb
+			10:00	AT	AE%sT	1917 Apr
 			10:00	Aus	AE%sT	1919 Apr 1 0:00s
 			0	-	zzz	1948 Mar 25
 			10:00	Aus	AE%sT	1967
