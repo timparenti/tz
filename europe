@@ -2171,8 +2171,8 @@ Zone Europe/Kaliningrad	 1:22:00 -	LMT	1893 Apr
 # Belgorodskaya oblast', Bryanskaya oblast', Vladimirskaya oblast',
 # Vologodskaya oblast', Voronezhskaya oblast',
 # Respublika Dagestan, Ivanovskaya oblast', Respublika Ingushetiya,
-# Kabarbino-Balkarskaya Respublika, Respublika Kalmykiya,
-# Kalyzhskaya oblast', Respublika Karachaevo-Cherkessiya,
+# Kabardino-Balkarskaya Respublika, Respublika Kalmykiya,
+# Kaluzhskaya oblast', Respublika Karachaevo-Cherkessiya,
 # Respublika Kareliya, Respublika Komi,
 # Kostromskaya oblast', Krasnodarskij kraj, Kurskaya oblast',
 # Leningradskaya oblast', Lipetskaya oblast', Respublika Marij El,
@@ -2183,7 +2183,7 @@ Zone Europe/Kaliningrad	 1:22:00 -	LMT	1893 Apr
 # Ryazanskaya oblast', Sankt-Peterburg,
 # Respublika Severnaya Osetiya, Smolenskaya oblast',
 # Stavropol'skij kraj, Tambovskaya oblast', Respublika Tatarstan,
-# Tverskaya oblast', Tyl'skaya oblast', Ul'yanovskaya oblast',
+# Tverskaya oblast', Tul'skaya oblast', Ul'yanovskaya oblast',
 # Chechenskaya Respublika, Chuvashskaya oblast',
 # Yaroslavskaya oblast'
 Zone Europe/Moscow	 2:30:20 -	LMT	1880
@@ -2320,13 +2320,19 @@ Zone Asia/Novosibirsk	 5:31:40 -	LMT	1919 Dec 14 6:00
 # As a result, Kemerovo oblast' will be in the same time zone as
 # Novosibirsk, Omsk, Tomsk, Barnaul and Altai Republic.
 
+# From Tim Parenti (2014-07-02):
+# The Kemerovo region will remain at UTC+7 through the 2014-10-26 change, thus
+# realigning itself with KRAT.
+
 Zone Asia/Novokuznetsk	 5:48:48 -	NMT	1920 Jan  6
 			 6:00	-	KRAT	1930 Jun 21 # Krasnoyarsk Time
 			 7:00	Russia	KRA%sT	1991 Mar 31 2:00s
 			 6:00	Russia	KRA%sT	1992 Jan 19 2:00s
 			 7:00	Russia	KRA%sT	2010 Mar 28 2:00s
 			 6:00	Russia	NOV%sT	2011 Mar 27 2:00s
-			 7:00	-	NOVT # Novosibirsk/Novokuznetsk Time
+			 7:00	-	NOVT	2014 Oct 26 2:00s
+						# Novosibirsk/Novokuznetsk Time
+			 7:00	-	KRAT
 
 #
 # From Oscar van Vlijmen (2001-08-25): [This region consists of]
@@ -2338,8 +2344,9 @@ Zone Asia/Krasnoyarsk	 6:11:20 -	LMT	1920 Jan  6
 			 7:00	Russia	KRA%sT	1991 Mar 31 2:00s
 			 6:00	Russia	KRA%sT	1992 Jan 19 2:00s
 			 7:00	Russia	KRA%sT	2011 Mar 27 2:00s
-			 8:00	-	KRAT
-#
+			 8:00	-	KRAT	2014 Oct 26 2:00s
+			 7:00	-	KRAT
+
 # From Oscar van Vlijmen (2001-08-25): [This region consists of]
 # Respublika Buryatiya, Irkutskaya oblast',
 # Ust'-Ordynskij Buryatskij avtonomnyj okrug.
@@ -2388,6 +2395,11 @@ Zone Asia/Yakutsk	 8:38:40 -	LMT	1919 Dec 15
 
 # From Oscar van Vlijmen (2009-11-29):
 # The Sakha districts are: Bulunskij, Verkhoyanskij, ... Ust'-Yanskij.
+
+# From Tim Parenti (2014-07-02):
+# Verkhoyansk and Ust-Jansky Districts (covered by Asia/Vladivostok) will be
+# moving to UTC+10 on 2014-10-26 to stay aligned with VLAT; however, Bulunsky
+# District (represented by Tiksi) will move to UTC+9, aligning with YAKT.
 Zone Asia/Vladivostok	 8:47:44 -	LMT	1922 Nov 15
 			 9:00	-	VLAT	1930 Jun 21 # Vladivostok Time
 			10:00	Russia	VLA%sT	1991 Mar 31 2:00s
@@ -2395,6 +2407,14 @@ Zone Asia/Vladivostok	 8:47:44 -	LMT	1922 Nov 15
 			10:00	Russia	VLA%sT	2011 Mar 27 2:00s
 			11:00	-	VLAT	2014 Oct 26 2:00s
 			10:00	-	VLAT
+
+Zone Asia/Tiksi	 8:35:28 -	LMT	1922 Nov 15
+			 9:00	-	VLAT	1930 Jun 21 # Vladivostok Time
+			10:00	Russia	VLA%sT	1991 Mar 31 2:00s
+			 9:00	Russia	VLA%sT	1992 Jan 19 2:00s
+			10:00	Russia	VLA%sT	2011 Mar 27 2:00s
+			11:00	-	VLAT	2014 Oct 26 2:00s
+			 9:00	-	YAKT
 
 # From Arthur David Olson (2012-05-09):
 # Tomponskij and Ust'-Majskij switched from Vladivostok time to Yakutsk time
@@ -2412,9 +2432,9 @@ Zone Asia/Khandyga	 9:02:13 -	LMT	1919 Dec 15
 			 9:00	Russia	YAK%sT	2004
 			10:00	Russia	VLA%sT	2011 Mar 27 2:00s
 			11:00	-	VLAT	2011 Sep 13 0:00s # Decree 725?
-			10:00	-	YAKT
+			10:00	-	YAKT	2014 Oct 26 2:00s
+			 9:00	-	YAKT
 
-#
 # Sakhalinskaya oblast'.
 # The Zone name should be Asia/Yuzhno-Sakhalinsk, but that's too long.
 Zone Asia/Sakhalin	 9:30:48 -	LMT	1905 Aug 23
@@ -2424,8 +2444,9 @@ Zone Asia/Sakhalin	 9:30:48 -	LMT	1905 Aug 23
 			10:00	Russia	SAK%sT	1992 Jan 19 2:00s
 			11:00	Russia	SAK%sT	1997 Mar lastSun 2:00s
 			10:00	Russia	SAK%sT	2011 Mar 27 2:00s
-			11:00	-	SAKT
-#
+			11:00	-	SAKT	2014 Oct 26 2:00s
+			10:00	-	SAKT
+
 # From Oscar van Vlijmen (2003-10-18): [This region consists of]
 # Magadanskaya oblast', Respublika Sakha (Yakutiya).
 # Probably also: Kuril Islands.
@@ -2438,11 +2459,18 @@ Zone Asia/Magadan	10:03:12 -	LMT	1924 May  2
 			11:00	Russia	MAG%sT	1991 Mar 31 2:00s
 			10:00	Russia	MAG%sT	1992 Jan 19 2:00s
 			11:00	Russia	MAG%sT	2011 Mar 27 2:00s
-			12:00	-	MAGT
+			12:00	-	MAGT	2014 Oct 26 2:00s
+			11:00	-	MAGT
 
 # From Arthur David Olson (2012-05-09):
 # Ojmyakonskij and the Kuril Islands switched from
 # Magadan time to Vladivostok time in 2011.
+
+# From Tim Parenti (2014-07-02):
+# Oymyakonsky District (represented by Ust-Nera) will be moving to UTC+10 on
+# 2014-10-26 to stay aligned with VLAT; however, Severo-Kurilsky District
+# (Kuril Islands, represented by Severo-Kurilsk) will remain on UTC+11,
+# aligning with MAGT.
 Zone Asia/Ust-Nera	 9:32:54 -	LMT	1919 Dec 15
 			 8:00	-	YAKT	1930 Jun 21 # Yakutsk Time
 			 9:00	Russia	YAKT	1981 Apr  1
@@ -2450,7 +2478,18 @@ Zone Asia/Ust-Nera	 9:32:54 -	LMT	1919 Dec 15
 			10:00	Russia	MAG%sT	1992 Jan 19 2:00s
 			11:00	Russia	MAG%sT	2011 Mar 27 2:00s
 			12:00	-	MAGT	2011 Sep 13 0:00s # Decree 725?
-			11:00	-	VLAT
+			11:00	-	VLAT	2014 Oct 26 2:00s
+			10:00	-	VLAT
+
+Zone Asia/Severo-Kurilsk	10:24:28 -	LMT	1919 Dec 15
+			 8:00	-	YAKT	1930 Jun 21 # Yakutsk Time
+			 9:00	Russia	YAKT	1981 Apr  1
+			11:00	Russia	MAG%sT	1991 Mar 31 2:00s
+			10:00	Russia	MAG%sT	1992 Jan 19 2:00s
+			11:00	Russia	MAG%sT	2011 Mar 27 2:00s
+			12:00	-	MAGT	2011 Sep 13 0:00s # Decree 725?
+			11:00	-	VLAT	2014 Oct 26 2:00s
+			11:00	-	MAGT
 
 # From Oscar van Vlijmen (2001-08-25): [This region consists of]
 # Kamchatskaya oblast', Koryakskij avtonomnyj okrug.
