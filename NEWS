@@ -16,6 +16,9 @@ Unreleased, experimental changes
     (Europe/Samara, Asia/Novokuznetsk, Asia/Kamchatka, and Asia/Anadyr
     will not change their clocks.)
 
+    New Zones Asia/Chita, Asia/Tiksi, and Asia/Srednekolymsk.
+    (Thanks to Tim Parenti.)
+
   Changes affecting time zone abbreviations
 
     Australian eastern time zone abbreviations are now AEST/AEDT not EST,
