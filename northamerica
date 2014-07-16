@@ -1348,7 +1348,6 @@ Zone America/Moncton	-4:19:08 -	LMT	1883 Dec  9
 # says this common practice was codified into law as of 2007.
 # For lack of better info, guess this practice began around 1970, contra to
 # Shanks & Pottenger who have this region observing AST/ADT.
-# for post-1970 data America/Puerto_Rico.
 
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
 Rule	Mont	1917	only	-	Mar	25	2:00	1:00	D
@@ -2496,7 +2495,7 @@ Zone America/Santa_Isabel	-7:39:28 -	LMT	1922 Jan  1  0:20:32
 ###############################################################################
 
 # Anguilla
-# See 'southamerica'.
+# See America/Port_of_Spain, in 'southamerica'.
 
 # Antigua and Barbuda
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
@@ -2799,7 +2798,7 @@ Zone	America/Havana	-5:29:28 -	LMT	1890
 			-5:00	Cuba	C%sT
 
 # Dominica
-# See 'southamerica'.
+# See America/Port_of_Spain, in 'southamerica'.
 
 # Dominican Republic
 
@@ -2851,7 +2850,7 @@ Zone America/El_Salvador -5:56:48 -	LMT	1921		# San Salvador
 # Guadeloupe
 # St Barthélemy
 # St Martin (French part)
-# See 'southamerica'.
+# See America/Port_of_Spain, in 'southamerica'.
 
 # Guatemala
 #
@@ -3012,7 +3011,7 @@ Zone America/Martinique	-4:04:20 -      LMT	1890		# Fort-de-France
 			-4:00	-	AST
 
 # Montserrat
-# See 'southamerica'.
+# See America/Port_of_Spain, in 'southamerica'.
 
 # Nicaragua
 #
@@ -3095,7 +3094,7 @@ Zone America/Puerto_Rico -4:24:25 -	LMT	1899 Mar 28 12:00    # San Juan
 
 # St Kitts-Nevis
 # St Lucia
-# See 'southamerica'.
+# See America/Port_of_Spain, in 'southamerica'.
 
 # St Pierre and Miquelon
 # There are too many St Pierres elsewhere, so we'll use 'Miquelon'.
@@ -3106,7 +3105,7 @@ Zone America/Miquelon	-3:44:40 -	LMT	1911 May 15	# St Pierre
 			-3:00	Canada	PM%sT
 
 # St Vincent and the Grenadines
-# See 'southamerica'.
+# See America/Port_of_Spain, in 'southamerica'.
 
 # Turks and Caicos
 #
@@ -3141,7 +3140,7 @@ Zone America/Grand_Turk	-4:44:32 -	LMT	1890
 
 # British Virgin Is
 # Virgin Is
-# See 'southamerica'.
+# See America/Port_of_Spain, in 'southamerica'.
 
 
 # Local Variables:
