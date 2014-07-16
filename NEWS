@@ -40,6 +40,11 @@ Unreleased, experimental changes
     Prefer MSK/MSD for Moscow time in Russia, even in other cities.
     Similarly, prefer EET/EEST for eastern European time in Russia.
 
+    Change time zone abbreviations in (western) Samoa to use "ST" and
+    "DT" suffixes, as this is more likely to match common practice.
+    Prefix "W" to (western) Samoa time when its standard-time offset
+    disagrees with that of American Samoa.
+
     Time zone abbreviations have been updated for Japan's two time
     zones used 1896-1937.  JWST now stands for Western Standard
     Time, and JCST for Central Standard Time (formerly this was CJT).
@@ -67,8 +72,19 @@ Unreleased, experimental changes
     from 04-15 through 10-31; and in 1979 from 07-01 through 09-30.
     (Thanks to Yu-Cheng Chuang.)
 
+    Asia/Riyadh's transition to standard time is now 1947-03-14, not 1950.
+
     Europe/Helsinki's 1942 fall-back transition was October 4 at 01:00, not
     October 3 at 00:00.  (Thanks to Konstantin Hyppönen.)
+
+    Pacific/Pago_Pago has been changed from UTC-11:30 to UTC-11 for the period
+    from 1911 to 1950.
+
+    Pacific/Chatham has been changed to New Zealand standard time plus
+    45 minutes for the period before 1957, reflecting a 1956 remark in
+    the New Zealand parliament.
+
+    Africa/Accra is now assumed to have observed DST from 1920 through 1935.
 
     Time in Russia before 1927 or so has been corrected by a few seconds in
     the following zones: Europe/Moscow, Asia/Irkutsk, Asia/Tbilisi,

@@ -437,9 +437,13 @@ Zone	Africa/Banjul	-1:06:36 -	LMT	1912
 # Ghana
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
 # Whitman says DST was observed from 1931 to "the present";
-# go with Shanks & Pottenger.
-Rule	Ghana	1936	1942	-	Sep	 1	0:00	0:20	GHST
-Rule	Ghana	1936	1942	-	Dec	31	0:00	0	GMT
+# Shanks & Pottenger say 1936 to 1942;
+# and September 1 to January 1 is given by:
+# Scott Keltie J, Epstein M (eds), The Statesman's Year-Book,
+# 57th ed. Macmillan, London (1920), OCLC 609408015, pp xxviii.
+# For lack of better info, assume DST was observed from 1920 to 1942.
+Rule	Ghana	1920	1942	-	Sep	 1	0:00	0:20	GHST
+Rule	Ghana	1920	1942	-	Dec	31	0:00	0	GMT
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone	Africa/Accra	-0:00:52 -	LMT	1918
 			 0:00	Ghana	%s
