@@ -102,6 +102,11 @@ Unreleased, experimental changes
     New link Indian/Alfred_Faure for the Crozet Islands and the
     Scattered Islands.  (Thanks to Tobias Conradi and Antoine Leca.)
 
+  Changes affecting data format
+
+    The file 'iso3166.tab' is planned to switch from ASCII to UTF-8.
+    It is still ASCII now, but commentary about the switch has been added.
+
   Changes affecting code
 
     'localtime', 'mktime', etc. now use much less stack space if ALL_STATE
