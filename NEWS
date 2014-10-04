@@ -1,5 +1,16 @@
 News for the tz database
 
+Unreleased, experimental changes
+
+  Changes affecting past time stamps
+
+    The date of the introduction of standard time in Asia/Ho_Chi_Minh and
+    Asia/Phnom_Penh was 1906-07-01, not 06-09; additionally, UT+7:00 was
+    adopted in these locations on 1911-05-01, not 03-11.  The time has been
+    adjusted by a few seconds during this time.
+    (Thanks to Trần Ngọc Quân for reporting the problem.)
+
+
 Release 2014h - 2014-09-25 18:59:03 -0700
 
   Changes affecting past time stamps

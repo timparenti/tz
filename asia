@@ -272,8 +272,8 @@ Zone	Asia/Rangoon	6:24:40 -	LMT	1880        # or Yangon
 
 # Cambodia
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
-Zone	Asia/Phnom_Penh	6:59:40 -	LMT	1906 Jun  9
-			7:06:20	-	SMT	1911 Mar 11  0:01 # Saigon MT?
+Zone	Asia/Phnom_Penh	6:59:40 -	LMT	1906 Jul  1  0:00
+			7:06:30	-	PLMT	1911 May  1  0:00 # Phù Liễn MT
 			7:00	-	ICT	1912 May
 			8:00	-	ICT	1931 May
 			7:00	-	ICT
@@ -2775,14 +2775,29 @@ Zone	Asia/Tashkent	4:37:11 -	LMT	1924 May  2
 # from Saigon's location.  For now, ignore this and stick with Shanks
 # and Pottenger.
 
+# From Trần Ngọc Quân (2014-10-03):
+# http://www.thoigian.com.vn/?mPage=P80D01
+# is a good Vietnamese-language source for several 20th-century decrees
+# related to time in Vietnam.
+#
+# Translation from Brian Inglis (2014-10-04):
+# "When completed construction Observatory Phu Lien, Indochina government
+# decree dated 1906-06-09 (Official Gazette dated 1906-06-18 Indochina)
+# fixed now legal for all countries of Indochina under the meridian passing
+# through Phù Liễn (104°17'17" east of Paris) from 0 hours on 1906-07-01."
+#
+# From Tim Parenti (2014-10-04):
+# The Paris meridian is at 2°20'14"; adding 104°17'17" gives 106°37'31", or
+# UT+7:06:30.
+
 # From Arthur David Olson (2008-03-18):
 # The English-language name of Vietnam's most populous city is "Ho Chi Minh
 # City"; use Ho_Chi_Minh below to avoid a name of more than 14 characters.
 
 # From Shanks & Pottenger:
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
-Zone	Asia/Ho_Chi_Minh	7:06:40 -	LMT	1906 Jun  9
-			7:06:20	-	SMT	1911 Mar 11  0:01 # Saigon MT?
+Zone	Asia/Ho_Chi_Minh	7:06:40 -	LMT	1906 Jul  1  0:00
+			7:06:30	-	PLMT	1911 May  1  0:00 # Phù Liễn MT
 			7:00	-	ICT	1912 May
 			8:00	-	ICT	1931 May
 			7:00	-	ICT
