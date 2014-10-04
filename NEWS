@@ -7,7 +7,13 @@ Unreleased, experimental changes
     The date of the introduction of standard time in Asia/Ho_Chi_Minh and
     Asia/Phnom_Penh was 1906-07-01, not 06-09; additionally, UT+7:00 was
     adopted in these locations on 1911-05-01, not 03-11.  The time has been
-    adjusted by a few seconds during this time.
+    adjusted by a few seconds during this time.  Also, Asia/Ho_Chi_Minh has
+    been updated to better reflect the time in South Vietnam between 1931 and
+    1975.
+    (Thanks to Trần Ngọc Quân for reporting the problems.)
+    
+    A new zone, Asia/Hanoi, has been created to reflect the time in North
+    Vietnam prior to reunification.
     (Thanks to Trần Ngọc Quân for reporting the problem.)
 
 

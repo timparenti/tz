@@ -2790,6 +2790,16 @@ Zone	Asia/Tashkent	4:37:11 -	LMT	1924 May  2
 # The Paris meridian is at 2°20'14"; adding 104°17'17" gives 106°37'31", or
 # UT+7:06:30.
 
+# Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
+Zone	Asia/Hanoi	7:03:24 -	LMT	1906 Jul  1  0:00
+			7:06:30	-	PLMT	1911 May  1  0:00 # Phù Liễn MT
+			7:00	-	ICT	1942 Dec 31 23:00
+			8:00	-	ICT	1945 Mar 14 23:00
+			9:00	-	JST	1945 Sep  2
+			7:00	-	ICT	1947 Mar 31 23:00
+			8:00	-	ICT	1954 Oct  9 23:00
+			7:00	-	ICT
+
 # From Arthur David Olson (2008-03-18):
 # The English-language name of Vietnam's most populous city is "Ho Chi Minh
 # City"; use Ho_Chi_Minh below to avoid a name of more than 14 characters.
@@ -2799,7 +2809,9 @@ Zone	Asia/Tashkent	4:37:11 -	LMT	1924 May  2
 Zone	Asia/Ho_Chi_Minh	7:06:40 -	LMT	1906 Jul  1  0:00
 			7:06:30	-	PLMT	1911 May  1  0:00 # Phù Liễn MT
 			7:00	-	ICT	1912 May
-			8:00	-	ICT	1931 May
+			8:00	-	ICT	1955 Jul
+			7:00	-	ICT	1960 Jan
+			8:00	-	ICT	1975 Jun 13 # Reunification
 			7:00	-	ICT
 
 # Yemen
