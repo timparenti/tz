@@ -125,3 +125,19 @@ Zone Personal/Tim_Parenti	-5:21:15 -	LMT	1883 Nov 18 11:38:45
 # RETURN home.
 			-5:00	_US	E%sT
 
+
+
+
+
+# The clock in Gates-Hillman 4301 at Carnegie Mellon University was pretty
+# screwy on 2015-01-28.  Assume it was fine before then.  It may not get fixed!
+
+# Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
+Zone Personal/GHC_4301	-5:19:47 -	LMT	1883 Nov 18 11:38:45
+			-5:00	_US	E%sT	1920
+			-5:00	_NYC	E%sT	1942
+			-5:00	_US	E%sT	1946
+			-5:00	_NYC	E%sT	1967
+			-5:00	_US	E%sT	2015 Jan 28  7:54:23
+			11:05:37	-	GHC4301NT # GHC 4301 Non-standard Time
+
